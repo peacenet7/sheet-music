@@ -84,34 +84,17 @@ backing = \relative c {
   cis, e gis b cis, e a c |b,gis' b e b, gis' b e |
   b, a' cis e b, a' dis e | cis, gis' cis e cis, gis' b4, |
   ais8 cis fis ais a, c fis a | b, e gis b b, e gis b |
+  \tempo 4 = 68
   b, e a cis 
-  ^markup {\italic "rit."}
-  \tempo 4 = 66
+  \mark\markup {\italic "rit."}
+ 
   b, fis' b fis | 
-  e, e' gis b 
   \tempo 4 = 60
-  e,, e' a b gis b, gis' b e4 \fermata 
+  e, e' gis b 
+  \tempo 4 = 50
+  e,, e' a b gis b, gis' b e4 \fermata \bar "|."
   % ~~~~~ 87 마디까지 
 
-
-
-
-
-
-
-
-
-  %      
-  % 전체 곡 반복 (1절 & 2절 및 후렴, 총 85마디 흐름을 모두 연주합니다)
-  %\repeat volatile 2
-    
-    
-    % \alternative {
-    %  { e,,8 b'' e g, b e, b' g | b,,8 fis'' b dis, fis b, fis' dis | }
-      % [최종 아웃트로] 노래가 모두 끝나고 여운을 남기는 마무리 느려지기
-    % { \tempo 4 = 50 e,,8 b'' e g, b e, b' g | <e b' e g b e>1 \bar "|." }
-    }
-  }
 }
 
 \score {
