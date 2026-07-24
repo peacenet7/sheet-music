@@ -13,16 +13,17 @@ backing = \relative c {
   \time 4/4
   \tempo 4 = 84
   %   64 
-  \set Staff.midiInstrument = "acoustic guitar (nylon)"
-
-  % 5~13마디] 전주 (Intro) - 잔잔하게 시작
+  
+  % 5~13마디] 전주 (Intro) - 잔잔하게 시작 acoustic guitar (nylon)
   
   \time 4/4
   %{    %}
    e4. e8 e2  |
    e4. e8 e2  |
+   e4. e8 e2  | 
    e4. e8 e2  |
-   e4. e8 e2  |
+  
+\set Staff.midiInstrument = #"electric piano 1"
   \time 4/4
   e8 b' gis' b e b gis e|e, b' gis' b e b gis e|
   a, cis e a a e a e|a, cis e a a e a e|
