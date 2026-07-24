@@ -11,7 +11,7 @@ backing = \relative c {
 
   \key e \major
   \time 4/4
-  \tempo 4 = 72
+  \tempo 4 = 84
   %   64 
   \set Staff.midiInstrument = "acoustic guitar (nylon)"
 
