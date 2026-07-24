@@ -53,7 +53,7 @@ backing = \relative c {
 
 
   % 32~ 49
-  cis,8 e gis b cis, e a c | b, e gis e' b, gis' b e |
+  cis,8 e gis b c, e a c | b, e gis e' b, gis' b e |
   b, a' cis e b, a' dis e  | e,, b' e gis a cis, a' b  |
   gis4 b8, e  b4 b | e8, b' gis' b e b gis e |
   e, b' gis' b e b gis e | a, cis e a a e a e   |
@@ -86,7 +86,7 @@ backing = \relative c {
   ais8 cis fis ais a, c fis a | b, e gis b b, e gis b |
   \tempo 4 = 68
   b, e a cis 
-  \mark\markup {\italic "rit."}
+  % \mark\markup {\italic "rit."}
  
   b, fis' b fis | 
   \tempo 4 = 60
