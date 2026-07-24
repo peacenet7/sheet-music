@@ -84,8 +84,13 @@ backing = \relative c {
   cis, e gis b cis, e a c |b,gis' b e b, gis' b e |
   b, a' cis e b, a' dis e | cis, gis' cis e cis, gis' b4, |
   ais8 cis fis ais a, c fis a | b, e gis b b, e gis b |
-  b, e a cis b, fis' b fis | 
-  e, e' gis b e,, e' a b gis b, gis' b e4 
+  b, e a cis 
+  ^markup {\italic "rit."}
+  \tempo 4 = 66
+  b, fis' b fis | 
+  e, e' gis b 
+  \tempo 4 = 60
+  e,, e' a b gis b, gis' b e4 \fermata 
   % ~~~~~ 87 마디까지 
 
 
