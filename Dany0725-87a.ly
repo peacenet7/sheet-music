@@ -1,29 +1,21 @@
 
 version "2.24.0"
-
 \header {
-  title = "Danny Boy (Full Accompaniment)"
+  title = "Danny Boy (2nd)"
   tagline = ""
 }
-
-
-backing = \relative c {
-
+\score {
+  \new Staff 
+ backing = \relative c {
   \key e \major
   \time 4/4
   \tempo 4 = 84
   %   64 
   
   % 5~13마디] 전주 (Intro) - 잔잔하게 시작 acoustic guitar (nylon)
-  
-  \time 4/4
-
-
 
   %{    %}
-
-
- % \set Staff.midiInstrument = #"electric bass (finger)"
+  % \set Staff.midiInstrument = #"electric bass (finger)"
 
   \set Staff.midiInstrument = #"timpani"
 
@@ -31,12 +23,17 @@ backing = \relative c {
    e4. e8 e2  |
    e4. e8 e2  | 
    e4. e8 e2  |
-  
 
+  % 1. 메인 전자기타 트랙
+  %   \new Staff \with { instrumentName = #"Guitar" } {
+  %\set Staff.midiInstrument = #"electric piano 1"
+  \set Staff.midiInstrument = "acoustic guitar (nylon 2)"
+  % \set Staff.midiInstrument = "pad 2 (warm)"
+  %    \set Staff.midiInstrument = "electric guitar (jazz)"
+%      \clef treble    
+      
+      % 기타 아르페지오 
 
-  \set Staff.midiInstrument = #"electric piano 1"
-  %\set Staff.midiInstrument = "acoustic guitar (nylon)"
-  \time 4/4
   e8 b' gis' b e b gis e|e, b' gis' b e b gis e|
   a, cis e a a e a e|a, cis e a a e a e|
   e, b' gis' b e b e4,|cis 8 gis' cis b e b gis e|
@@ -108,40 +105,21 @@ backing = \relative c {
   e,, e' a b gis b, gis' b e4 \fermata \bar "|."
   % ~~~~~ 87 마디까지 
 
+
+  % 2. 배경에 쫙 깔아주는 패드 트랙
+  % \new Staff \with { instrumentName = #"Pad" } {
+  %  \set Staff.midiInstrument = "pad 2 (warm)"
+  %
+ %  \clef treble
+      
+ % 패드는 온음표(1)나 온음표 붙임표(~)로 길게 느리게 연주
+  % <c e g>1~ |
+  % <a, c e>1 |
 }
 
 \score {
-  \new Staff 
   \backing
   \layout { }
   \midi { }
 }
-\version "2.24.0"
 
-\score {
-  <<
-    % 1. 메인 전자기타 트랙
-    \new Staff \with { instrumentName = #"Guitar" } {
-      \set Staff.midiInstrument = "electric guitar (jazz)"
-      \clef treble
-      \time 4/4
-      
-      % 기타 아르페지오 예시
-      c8 e g c' e' g' c' g |
-      a,8 c e a c' e' a e |
-    }
-
-    % 2. 배경에 쫙 깔아주는 패드 트랙
-    \new Staff \with { instrumentName = #"Pad" } {
-      \set Staff.midiInstrument = "pad 2 (warm)"
-      \clef treble
-      
-      % 패드는 온음표(1)나 온음표 붙임표(~)로 길게 느리게 연주
-      <c e g>1~ |
-      <a, c e>1 |
-    }
-  >>
-  
-  \midi { }
-  \layout { }
-}
