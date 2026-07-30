@@ -11,7 +11,8 @@ backing = \relative c {
 
   \key e \major
   \time 4/4
-  \tempo 4 = 84
+  % tempo 4 = 84
+  \tempo 4 = 85 
   %   64 
   
   % 5~13마디] 전주 (Intro) - 잔잔하게 시작 acoustic guitar (nylon)
@@ -34,8 +35,8 @@ backing = \relative c {
   
 
 
-  \set Staff.midiInstrument = #"electric piano 1"
-  %\set Staff.midiInstrument = "acoustic guitar (nylon)"
+  %\set Staff.midiInstrument = #"electric piano 1"
+  \set Staff.midiInstrument = "acoustic guitar (nylon)"
   \time 4/4
   e8 b' gis' b e b gis e|e, b' gis' b e b gis e|
   a, cis e a a e a e|a, cis e a a e a e|
