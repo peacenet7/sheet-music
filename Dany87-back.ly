@@ -35,7 +35,7 @@ backing = \relative c {
   
 
 
-  %\set Staff.midiInstrument = #"electric piano 1"
+  % \\set Staff.midiInstrument = #"electric piano 1"
   \set Staff.midiInstrument = "acoustic guitar (nylon)"
   \time 4/4
   e8 b' gis' b e b gis e|e, b' gis' b e b gis e|
